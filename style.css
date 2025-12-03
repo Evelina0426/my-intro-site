@@ -1,3 +1,7 @@
+html {
+      scroll-behavior: smooth;
+}
+
 /* 全域設定 */
 body {
   margin: 0;
@@ -64,6 +68,8 @@ main {
   border-radius: 12px;
   background: white;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+
+  scroll-margin-top: 80px;
 }
 
 .section h2 {
