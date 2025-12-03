@@ -1,0 +1,125 @@
+/* 全域設定 */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* 頁首 */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.site-subtitle {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+#dark-btn {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+/* 主內容區 */
+main {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 20px 40px;
+}
+
+.section {
+  margin-bottom: 32px;
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 12px 14px;
+  background: #fafafa;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.project-card {
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 12px 14px;
+  background: #fafafa;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode .site-header {
+  background: #1e1e1e;
+  border-bottom-color: #333;
+}
+
+.dark-mode .section {
+  background: #1b1b1b;
+  box-shadow: none;
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card {
+  background: #222;
+  border-color: #333;
+}
+
+.dark-mode a {
+  color: #8ab4ff;
+}
