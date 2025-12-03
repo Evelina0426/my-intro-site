@@ -23,7 +23,7 @@ aboutModalOverlay.addEventListener("click", (e) => {
       }
 });
 
-document.addEventListener("click", (e) => {
+document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
             aboutModalOverlay.style.display = "none";
       }
