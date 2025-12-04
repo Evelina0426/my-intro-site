@@ -8,9 +8,33 @@ function updateDarkButton() {
       }
 }
 
+function setTheme(mode) {
+      if (mode === "dark") {
+            document.body.classList.add("dark-mode")
+      } else {
+            document.body.classList.remove("dark-mode");
+      }
+      localStorage.setItem("theme", mode);
+      updateDarkButton();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark") {
+            setTheme("dark");
+      } else {
+            setTheme("light");
+      }
+});
+
 darkBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
-  updateDarkButton();
+      const isDark = document.body.classList.contains("dark-mode");
+      if (isDark) {
+            setTheme("light");
+      } else {
+            setTheme("dark");
+      }
 });
 
 updateDarkButton();
@@ -39,3 +63,22 @@ document.addEventListener("keydown", (e) => {
             aboutModalOverlay.style.display = "none";
       }
 });
+
+
+const navToggle = document.getElementById("nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+if (navToggle && siteNav) {
+      navToggle.addEventListener("click", () => {
+            siteNav.classList.toggle("open");
+      });
+
+      const navLinks = siteNav.querySelectorAll("a");
+      navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                  if (windows.innerwidth <= 768) {
+                        siteNav.classList.remove("open");
+                  }
+            });
+      });
+}
