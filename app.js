@@ -73,10 +73,9 @@ if (navToggle && siteNav) {
             siteNav.classList.toggle("open");
       });
 
-      const navLinks = siteNav.querySelectorAll("a");
-      navLinks.forEach(link => {
+      siteNav.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
-                  if (windows.innerwidth <= 768) {
+                  if (window.innerWidth <= 768) {
                         siteNav.classList.remove("open");
                   }
             });
