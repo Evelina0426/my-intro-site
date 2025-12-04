@@ -320,4 +320,9 @@ main {
       .site-nav.open {
             display: flex;
       }
+
+      .dark-mode .site-nav {
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(3px);
+}
 }
