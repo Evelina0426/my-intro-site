@@ -2,7 +2,7 @@ const darkBtn = document.getElementById("dark-btn");
 
 function updateDarkButton() {
       if (document.body.classList.contains("dark-mode")) {
-            darkBtn.textContent = "☀️ Light Mode";
+            darkBtn.textContent = "☀️";
       } else {
             darkBtn.textContent = "🌙 Dark Mode";
       }
