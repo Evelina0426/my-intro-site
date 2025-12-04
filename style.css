@@ -1,5 +1,5 @@
 body {
-      background: white;
+      background: pink;
 }
 
 * {
@@ -322,6 +322,7 @@ main {
       }
 
       .dark-mode .site-nav {
-            background: rgba(0,0,0,0.6);
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(3px);
       }
 }
