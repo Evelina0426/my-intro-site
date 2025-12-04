@@ -161,6 +161,7 @@ main {
       font-size: 0.85rem;
       opacity: 0.8;
 }
+
  /*more about me */
 #more-about-btn {
       margin-top: 12px;
@@ -277,7 +278,7 @@ main {
   border: 1px solid #ccc;
   background: white;
   cursor: pointer;
-  color: #222
+  color: #222;
 }
 
 @media (max-width: 768px) {
